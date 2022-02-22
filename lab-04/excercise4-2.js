@@ -1,5 +1,4 @@
-// Liệt kê tất cả các số nguyên tố nhỏ hơn n.'
-var n = Number(prompt("Enter n :"));
+// Liệt kê tất cả các số nguyên tố nhỏ hơn n.
 // kiem tra a co phai so nguyen to hay khong?
 
 function isPrimeNumber(a){
