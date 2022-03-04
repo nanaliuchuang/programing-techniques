@@ -1,25 +1,19 @@
 // Liệt kê tất cả các số nguyên tố nhỏ hơn n.
 // kiem tra a co phai so nguyen to hay khong?
-
-function isPrimeNumber(a){
-    let s = 0;
-    for (let i = 1; i <= a; i++){
-        if(a % i == 0){
-            s++;
-        }
-    }
-    if (s == 2){
-        return true;
-    } else {
-        return false;
-    }
-}
-function listPrimeNumber(n){
-    for (let i = 1; i <= n; i++){
-        if(isPrimeNumber(i) == true){
-        console.log(`List prime number of ${n} is :` + i);
-        alert(`List prime number of ${n} is :` + i);
-    }
+var prompt = require('prompt-sync')();
+let n, i, j, count;
+do {
+n = Number(prompt("Enter n (n > 1): "));
+} 
+while (isNaN(n) || n <= 1);
+for (i = 2; i < n; i++) {
+count = 0;
+for (j = 1; j <= i; j++) {
+if (j % 1 == 0 && i % j == 0) {
+count++;
 }
 }
-listPrimeNumber(n);
+if (count == 2) {
+console.log(i);
+}
+}

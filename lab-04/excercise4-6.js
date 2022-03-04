@@ -1,4 +1,6 @@
 // Viết hàm liệt kê các phần tử chẵn và các phần tử lẻ trong mảng.
+var prompt = require('prompt-sync')();
+
 function inputArrayNumber(arr,n){
     for ( let i = 0; i <= n; i++){
         arr[i] = Number(prompt("Enter arr [" + i + "]"))

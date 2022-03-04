@@ -1,4 +1,5 @@
 // Tính tổng tất cả “ước số chẵn” của số nguyên dương n
+var prompt = require('prompt-sync')();
 var n = Number(prompt("Enter n :"));
 
 function sumEvenNumber(n) {
@@ -18,4 +19,4 @@ function sumEvenNumber(n) {
     console.log(`Sum of even divisor ${n} is : ` + sum);
     alert(`Sum of even divisor ${n} is : ` + sum);
 }
-sumEvenNumber(n);
+sumEvenNumber();
